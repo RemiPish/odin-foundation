@@ -1,3 +1,3 @@
 # odin-recipes
 
-Webpages about different recipes taken from allrecipes.com. Written in HTML.
+Webpages about different recipes taken from allrecipes.com. Written in HTML and CSS.
