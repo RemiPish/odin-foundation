@@ -1,7 +1,50 @@
 body {
     font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
-    margin: 0 auto;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div {
+    font-size: 20px;
+    margin: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-title {
+    font-size: 56px;
+    text-align: center;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.subtitle {
+    text-decoration: underline;
+}
+
+.step-image {
+    width: 500px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.content {
+    max-width: 90%;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 .flex-container {
@@ -40,7 +83,8 @@ body {
     font-size: 18px;
 }
 
-.header-link:hover {
+.header-link:hover,
+.colored-text {
     color: #3882F6
 }
 
@@ -174,7 +218,7 @@ body {
 }
 
 .call-box-text,
-.call-box-btn button{
+.call-box-btn button {
     color: white;
 }
 
@@ -197,4 +241,53 @@ body {
     height: 50px;
     flex-direction: column;
     justify-content: space-evenly
+}
+
+.rps-score-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.rps-score-container .colored-text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#round,
+#playerScore,
+#cpuScore {
+    color: #1F2937;
+}
+
+.rps-result-container {
+    gap: 15px;
+}
+
+.rps-button-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rps-btn {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.rps-btn:hover {
+    border: #3882F6 2px solid;
+    cursor: pointer;
+}
+
+.rps-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: unset;
+}
+
+.rps-btn img {
+    width: 100px;
+    height: 100px;
 }

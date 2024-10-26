@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+    <title>Rock Paper Scissors </title>
+</head>
+
+<body>
+    <div class="header-container">
+        <a class="flex-container logo" href="/">
+            <img class="img-logo" src="../assets/images/odin-project-logo-removebg-preview.png" alt="Odin Project Logo">
+            <div class="logo-text">Odin Projects</div>
+        </a>
+        <div class="flex-container header-link-container">
+            <a class="header-link" href="/recipes/odin-recipe-main.html">Recipes</a>
+            <a class="header-link" href="/rock-paper-scissors/rockpaperscissors-main.html">RPS</a>
+            <a class="header-link" href="/recipes/odin-recipe-main.html">Coming Soon!</a>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="flex-container information-container">
+            <div id="main-title" class="colored-text">ROCK PAPER SCISSORS</div>
+            <h2>Beat the CPU 5 times to win the game!</h2>
+            <div class="rps-score-container">
+                <div class="colored-text">Round <span id="round"></span></div>
+                <div class="colored-text">Player Score: <span id="playerScore"> </span></div>
+                <div class="colored-text">CPU Score: <span id="cpuScore"></span></div>
+            </div>
+            <div class="call-box-btn"><button onclick="main()">Reset</button></div>
+            <h3 class="colored-text">Choose Rock, Paper or Scissors</h3>
+            <div class="flex-container rps-result-container">
+                <div id="result"></div>
+                <span class="colored-text" id="final-result"></span>
+            </div>
+
+            <div class="rps-button-container">
+                <button class="rps-btn" onclick="playRPS('rock')" id="rock-rps">
+                    <img src="../assets/images/rps-rock.png">
+                </button>
+                <button class="rps-btn" onclick="playRPS('paper')" id="paper-rps">
+                    <img src="../assets/images/rps-paper.png">
+                </button>
+                <button class="rps-btn" onclick="playRPS('scissors')" id="scissors-rps">
+                    <img src="../assets/images/rps-scissors.png">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/rps.js"></script>
+</body>
+
+</html>
