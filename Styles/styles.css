@@ -13,6 +13,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #main-title {
@@ -26,6 +27,7 @@ body {
 
 .flex-container {
     display: flex;
+    width: 100%;
 }
 
 .subtitle {
@@ -262,6 +264,7 @@ li {
 
 .rps-result-container {
     gap: 15px;
+    justify-content: center;
 }
 
 .rps-button-container {
@@ -290,4 +293,24 @@ li {
 .rps-btn img {
     width: 100px;
     height: 100px;
+}
+
+.etch-text-container {
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.etch-text-size-container {
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-container {
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 30vw;
+}
+
+.grid {
+    border: #4d4d4d solid 2px;
 }

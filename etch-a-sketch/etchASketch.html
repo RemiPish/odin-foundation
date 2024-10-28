@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+    <title>Etch-A-Sketch</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <a class="flex-container logo" href="../index.html">
+            <img class="img-logo" src="../assets/images/odin-project-logo-removebg-preview.png" alt="Odin Project Logo">
+            <div class="logo-text">Odin Projects</div>
+        </a>
+        <div class="flex-container header-link-container">
+            <a class="header-link" href="../recipes/odin-recipe-main.html">Recipes</a>
+            <a class="header-link" href="../rock-paper-scissors/rockpaperscissors-main.html">RPS</a>
+            <a class="header-link" href="../etch-a-sketch/etchASketch.html">Etch-A-Sketch</a>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="flex-container etch-text-container">
+            <div id="main-title" class="colored-text">ETCH-A-SKETCH</div>
+            <div class="flex-container etch-text-size-container">
+                <h4>Current Grid: <span class="colored-text" id="grid-size"></span></h4>
+                <div class="call-box-btn"><button onclick="changeGridSize()">Change Grid Size</button></div>
+                <div class="call-box-btn"><button onclick="resetGrid()">Reset</button></div>
+            </div>
+
+        </div>
+        <div class="flex-container grid-container">
+
+        </div>
+    </div>
+    <script src="../scripts/etchASketch.js"></script>
+</body>
+
+</html>
