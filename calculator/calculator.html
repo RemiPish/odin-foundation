@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Styles/styles.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <a class="flex-container logo" href="../index.html">
+            <img class="img-logo" src="../assets/images/odin-project-logo-removebg-preview.png" alt="Odin Project Logo">
+            <div class="logo-text">Odin Projects</div>
+        </a>
+        <div class="flex-container header-link-container">
+            <a class="header-link" href="../index.html">Coming soon!</a>
+        </div>
+    </div>
+    <div class="main-div">
+        <div id="main-title" class="colored-text">Calculator</div>
+        <div class="flex-container">
+            <div class="calculator-container">
+                <div class="calculator-logo-img">
+                    <img src="../assets/images/odin-project-logo-removebg-preview.png" alt="Odin Project Logo">
+                    <div>Odin's Calculator</div>
+                </div>
+                <div class="calculator-screen">
+                    <div class="calculator-screen-calc"></div>
+                    <div class="calculator-screen-input">0</div>
+                </div>
+                <div class="calculator-btn-container">
+                    <div class="calculator-btn-options">
+                        <button class="calculator-btn-option" onclick="resetCalculator()">AC</button>
+                        <button class="calculator-btn-option" onclick="deleteLast()">Del</button>
+                        <button class="calculator-btn-option" onclick="toggleSign()">+/-</button>
+                    </div>
+                    <div class="calculator-btn-main-container">
+                        <div class="calculator-btn-numbers">
+                            <button class="calculator-btn-number" onclick="pressNumber(7)">7</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(8)">8</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(9)">9</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(4)">4</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(5)">5</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(6)">6</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(1)">1</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(2)">2</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(3)">3</button>
+                            <button class="calculator-btn-number" onclick="pressNumber(0)">0</button>
+                            <button class="calculator-btn-number" onclick="pressDecimal()">.</button>
+                            <button class="calculator-btn-number btn-equal" onclick="calculate()">=</button>
+                        </div>
+                        <div class="calculator-btn-operators">
+                            <button class="calculator-btn-operator" onclick="setOperation('+')">+</button>
+                            <button class="calculator-btn-operator" onclick="setOperation('-')">-</button>
+                            <button class="calculator-btn-operator" onclick="setOperation('*')">x</button>
+                            <button class="calculator-btn-operator" onclick="setOperation('/')">÷</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/calculator.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&family=Tiny5&display=swap');
+
+@font-face {
+    font-family: Digital;
+    src: url("../Styles/fonts/digital-7.regular.ttf");
+}
+
 body {
     font-family: 'Segoe UI', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
@@ -28,6 +35,7 @@ body {
 .flex-container {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .subtitle {
@@ -313,4 +321,156 @@ li {
 
 .grid {
     border: #4d4d4d solid 2px;
+}
+
+.recipe-img {
+    width: 450px;
+    height: auto;
+}
+
+.recipe-description {
+    flex-direction: column;
+    width: 900px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.odin-link {
+    text-decoration: none;
+    color: white;
+}
+
+.odin-link:hover {
+    color: #3882F6;
+}
+
+.calculator-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(34, 170, 124);
+    gap: 10px;
+    border: #06784c 5px solid;
+}
+
+.calculator-logo-img {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Tiny5", sans-serif;
+}
+
+.calculator-logo-img img {
+    width: 60px;
+    height: auto;
+}
+
+.calculator-screen {
+    width: 90%;
+    height: 90px;
+    display: flex;
+    padding: 0 5px;
+    font-size: 40px;
+    border: 2px solid #6b7e77;
+    border-radius: 5px;
+    font-family: Digital;
+    background-color: rgb(206, 197, 197);
+    flex-direction: column;
+    gap:10px;
+}
+
+.calculator-screen-calc{
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+    min-height: 35%;
+}
+
+.calculator-screen-input{
+    min-width: 100%;
+    min-height: 35%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+}
+.calculator-btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.calculator-btn-container button{
+    border-radius: 5px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    border: #06784c 3px solid;
+}
+
+.calculator-btn-options{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.calculator-btn-option{
+    flex: 1 1 auto;
+    background-color: #ff9800;
+    color: white;
+}
+
+.calculator-btn-main-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.calculator-btn-numbers{
+    align-items: center;
+    justify-items: center;
+    flex: 69%;
+    display: flex;
+    height: 350px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.calculator-btn-numbers button{
+    height: 73px !important;
+    flex: 30%;
+}
+
+.calculator-btn-operators{
+    align-items: center;
+    justify-items: center;
+    width: 101px;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 5px 0;
+}
+
+.calculator-btn-operators button{
+    width: 100%;
+    height: 73px;
+}
+
+.btn-equal{
+    background-color: #3882F6;
+    color: white;
 }

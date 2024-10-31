@@ -17,6 +17,8 @@ Different small projects that are part of Odin Project Foundation Course.
 - Simple Rock Paper Scissors game against CPU for five rounds.
 ### Etch-A-Sketch
 - Draw on the given square tiles by hovering over them using cursor. A customizable grid where users can draw by hovering.
+### Calculator
+- A simple calculator that also supports keyboard input.
 
 ## Technologies Used
 - HTML5

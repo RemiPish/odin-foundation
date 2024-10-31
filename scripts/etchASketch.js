@@ -32,7 +32,7 @@ function resetGrid() {
 function changeGridSize() {
     let changedGridSize = 0;
     changedGridSize = prompt("Number of squares per side? (between 2 and 100)", `${gridCount}`);
-    if (!isNaN(changedGridSize) || changedGridSize < 2 || changedGridSize > 100) {
+    if (changedGridSize && (!isNaN(changedGridSize) || changedGridSize < 2 || changedGridSize > 100)) {
         gridCount = changedGridSize;
         resetGrid();
     }
